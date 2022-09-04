@@ -22,7 +22,7 @@ class Sym: #A stream of symbols
             if v > most:
                 most = v
                 most_key = k
-        return most, most_keys
+        return most_key
         
         
     def div(self):
@@ -37,11 +37,11 @@ class Sym: #A stream of symbols
 
 #short main to test the file 
 
-#symbol = Sym()
-#sym_list = ["a","a","a","a","b","b","c"]
-#for s in sym_list:
-#    symbol.add(s)
-#mode = symbol.mid()
-#entropy = symbol.div()
-#print(mode)
-#print(entropy)
+symbol = Sym()
+sym_list = ["a","a","a","a","b","b","c"]
+for s in sym_list:
+    symbol.add(s)
+mode = symbol.mid()
+entropy = symbol.div()
+print(mode)
+print(entropy)
