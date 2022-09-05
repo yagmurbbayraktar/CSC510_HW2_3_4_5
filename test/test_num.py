@@ -5,8 +5,8 @@ import argparse
 import csv
 import math
 from xmlrpc.client import MAXINT
-from main import the
-from Num import Num
+from CSC510_HW2_3_4_5.src.main import the
+from CSC510_HW2_3_4_5.src.Num import Num
 import unittest
 
 class TestingNum(unittest.TestCase):
