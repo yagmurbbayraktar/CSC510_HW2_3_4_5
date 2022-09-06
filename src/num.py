@@ -1,48 +1,55 @@
+import math
+import random, getopt
+import os, sys, time, random
+import argparse
 import csv
 import math
 from xmlrpc.client import MAXINT
+from main import the
 
-with open('Data.csv', 'r') as file:
-    reader = csv.reader(file)
-    data = []
-    for row in reader:
-        data.append(row)
-print(data)
+def per(t,p):
+        p = math.floor(((p or 0.5)*len(t))+0.5)
+        return t[max(1, min(len(t),p))]
 
-class num():
-    def __init__(self, val, pos):
+class Num():
+    def __init__(self, val = ""):
         self.count = 0 # counter
         self.has = {}  #stored data
         self.val = val  # value at key position
-        self.pos = pos   # column position
         self.isSorted = True #boolean
         self.lo = MAXINT
         self.hi = -MAXINT
 
-    def add(self, x, pos):
-        if x != "?":
-            self.count += 1
-            self.lo = min(x, self.lo)
-            self.hi = max(x, self.hi)
-
-            # RESERVIOR SAMPLER AND ADD CODE TO BE WRITTEN
+    def add(self,v):
+        if v!="?":
+            self.count = self.count+1
+            self.lo = min(v, self.lo)
+            self.hi = max(v, self.hi)
+            length = len(self.has)
+            pos = -1
+            if length < the["nums"]:
+                pos = 1+length
+            elif random.random() < the["nums"]/ self.count:
+                pos = random.randint(1,length)
+            if pos >= 0:
+                self.isSorted = False 
+                self.has[pos]=float(v)
 
     def num(self):
-        if not self.isSorted:
+        if self.isSorted == False:
             self.has = {j: i for j, i in sorted(self.has.items(), key=lambda item: item[1])}
             self.isSorted = True
         return self.has
 
     def div(self):
-        size = len(self.num())
-        ninetieth_percentile = self.num()[int(math.ceil((size * 90) / 100)) - 1]
-        tenth_percentile = self.num()[int(math.ceil((size * 10) / 100)) - 1]
+        diction = self.num()
+        size = len(diction)
+        
+        ninetieth_percentile = per(list(diction.values()), 0.9)
+        tenth_percentile = per(list(diction.values()), 0.1)
+        
         return (ninetieth_percentile - tenth_percentile) / 2.58
 
     def mid(self):
-        temp = self.has
-        return temp[(temp.len()-1)/2]
-
-
-
-
+        lst = self.num()
+        return per(list(self.num().values()), 0.5)
