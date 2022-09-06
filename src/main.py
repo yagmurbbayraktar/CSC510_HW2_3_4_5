@@ -30,9 +30,9 @@ def oo(t):
     print(o(t))
     return t
 """
-def theform(dump,inputfile, nums,seed,seperator):
-        the = {}
-        the["dump"]=dump
+def cli(dump,inputfile, nums,seed,seperator):   #General sample of cli function talked about in class
+        the = {}                                #The function takes several parameters and does updates on 'the' class/dictionary
+        the["dump"]=dump                        #returns 'the' dictionary
         the["inputfile"]=inputfile
         the["nums"]=nums
         the["seed"]=seed
@@ -48,27 +48,14 @@ def theform(dump,inputfile, nums,seed,seperator):
         self.dump = dump"""
         
         
-"""def o(t):
-    if not isinstance(t, dict):
-        return str(t)
-    def show(k, v):
-        if str(k).find("^_") == -1:
-        v = o(v)
-        return ":{0} {1}".format(k, v) if len(t) != 0 else str(v)
-    
-    u = []
-    for k, v in t.items():
-        u.append(show(k, v))
-    if len(t) == 0:
-        sorted(u)
-    return "{" + " ".join(u) + "}"
+def o(t):
+    pass
 
 def oo(t):
-    disp = o(t)
-    print(disp)
-"""
+    pass
 
-def runs(k,old,status,out,msg):
+
+def runs(k,old,status,out,msg):                 #'run' function is used to run all the eg.test cases and will be completeted in the following weeks
     if not eg[k]:
         return
     random.seed(the.seed)
@@ -92,34 +79,36 @@ def runs(k,old,status,out,msg):
     print("!!!!!!", msg, k , status)
     return out
 
-def csv1(inputfile):
+def csv1(inputfile):                         #csv1 function to read data from the input files
     dict = {}
     with open(inputfile, 'r') as file:
         content = [line[:-1] for line in file]
     header = (content[:1][0]).split(',')
     rows = content[1:]
-
     for index in range(len(header)):
         rowArray = []
         for row in rows:
             rowArray.append(row[index])
         dict[header[index]] = rowArray
 
-    print(header)
-
 if __name__ == '__main__':
-        print ('Program start\n-----------------------------------------------')
-        try:
+        print ('Program start\n-----------------------------------------------')#signal of program starting
+        try:                                                                    
             opts, args = getopt.getopt(sys.argv[1:],"hedf:n:s:S:", ["help", "eg","dump","file","nums","seed", "seperator"])
+                                                                                #getopt module helps organize all parameters in cmd
+                                                                                #that if input: $python -f            without any filename attached
+                                                                                #cmd will print out the error message
         except getopt.GetoptError:
+            print ('Wrong parameter usage')
             print ('test.py -f <inputfile> -n <nums> ........')
+            print ('Input -h for help manual')
             sys.exit(2)
         for opt, arg in opts:
             if opt in ("-e", "--eg"):
                 print ('start-up example, doing nothing')
                 print('----------------------------------------------')
                 sys.exit()
-            elif opt in ("-h", "--help"):
+            elif opt in ("-h", "--help"):                                       #help manual given by the source code
                 print ("""OPTIONS:
                     -e      --eg            startup example                     = nothing
                     -d      --dump          on test fail, exit with startdump   = false
@@ -143,5 +132,5 @@ if __name__ == '__main__':
                 seed = arg
             elif opt in ("-S", "--seperator"):
                 seperator = arg
-        the = theform(dump,inputfile,nums,seed,seperator)
+        the = cli(dump,inputfile,nums,seed,seperator)
         csv1(inputfile)
