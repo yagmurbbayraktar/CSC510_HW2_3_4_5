@@ -5,8 +5,10 @@ import argparse
 import csv
 import math
 from xmlrpc.client import MAXINT
-from CSC510_HW2_3_4_5.src.main import the
-from CSC510_HW2_3_4_5.src.Num import Num
+import sys
+sys.path.append( '.' )
+from src.main import the
+from src.Num import Num
 import unittest
 
 class TestingBignum(unittest.TestCase):
