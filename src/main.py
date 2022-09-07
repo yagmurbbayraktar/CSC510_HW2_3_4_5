@@ -52,7 +52,7 @@ def o(t):
     pass
 
 def oo(t):
-    pass
+    print(t)
 
 
 def runs(k,old,status,out,msg):                 #'run' function is used to run all the eg.test cases and will be completeted in the following weeks
