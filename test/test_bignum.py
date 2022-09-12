@@ -8,7 +8,7 @@ from xmlrpc.client import MAXINT
 import sys
 sys.path.append( '.' )
 from src.main import the
-from src.Num import Num
+from src.num import Num
 import unittest
 
 class TestingBignum(unittest.TestCase):
