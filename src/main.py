@@ -38,6 +38,14 @@ def cli(dump,inputfile, nums,seed,seperator):   #General sample of cli function 
         the["seed"]=seed
         the["seperator"]=seperator
         return the
+    
+def copy(t,u):   #Copy function 
+        if not isinstance(t, dict):          
+            return t
+        u = {}
+        for k in len(t):
+            u[k] = t[k]
+        return u
 
 """class the():
     def __init__(self, dump,inputfile, nums,seed,seperator):
