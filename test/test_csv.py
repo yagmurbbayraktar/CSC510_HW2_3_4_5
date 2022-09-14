@@ -9,6 +9,7 @@ import sys
 sys.path.append( '.' )
 from src.main import the, oo
 from src.row import Row
+from src.data import csv
 import unittest
 
 class TestingCSV(unittest.TestCase):
