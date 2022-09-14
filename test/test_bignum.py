@@ -6,9 +6,10 @@ import csv
 import math
 from xmlrpc.client import MAXINT
 import sys
-sys.path.append( '.' )
-from src.main import the
-from src.num import Num
+sys.path.insert(0, '../src')
+
+from main import the
+from Num import Num
 import unittest
 
 class TestingBignum(unittest.TestCase):
