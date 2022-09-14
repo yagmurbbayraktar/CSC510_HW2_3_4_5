@@ -11,13 +11,13 @@ s = s+"/src"
 import sys
 sys.path.insert(1, s)
 from num import Num
-from data import Data
+from data import data
 from main import the,o
 import unittest
 
 class Testingstats(unittest.TestCase):
     def test_stats(self):
-        data = Data("../data/auto93.csv")
+        data = data("../data/auto93.csv")
         def div(col):
             return col.div()
         def mid(col):
