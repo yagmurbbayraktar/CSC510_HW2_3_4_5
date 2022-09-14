@@ -88,7 +88,7 @@ def runs(k,old,status,out,msg):                 #'run' function is used to run a
     return out
 
 def coerce(str):
-    if isfloat(str):
+    if not isinstance(str, float):
         return float(str)
     elif str == "true":
         return True
