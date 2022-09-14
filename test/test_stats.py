@@ -5,11 +5,13 @@ import argparse
 import csv
 import math
 from xmlrpc.client import MAXINT
+s = __file__
+s = s[0:len(s)-17]
+s = s+"/src"
 import sys
-sys.path.append( '.' )
-from src.main import the,o
-from src.Num import Num
-from src.Data import Data
+sys.path.insert(1, s)
+from num import Num
+from main import the,o
 import unittest
 
 class Testingstats(unittest.TestCase):
