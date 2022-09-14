@@ -11,6 +11,7 @@ s = s+"/src"
 import sys
 sys.path.insert(1, s)
 from num import Num
+from data import Data
 from main import the,o
 import unittest
 
