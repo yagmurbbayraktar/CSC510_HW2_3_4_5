@@ -148,4 +148,3 @@ if __name__ == '__main__':
             elif opt in ("-S", "--seperator"):
                 seperator = arg
         the = cli(dump,inputfile,nums,seed,seperator)
-        csv1(inputfile)
