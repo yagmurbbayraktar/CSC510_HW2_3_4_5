@@ -87,18 +87,25 @@ def runs(k,old,status,out,msg):                 #'run' function is used to run a
     print("!!!!!!", msg, k , status)
     return out
 
-def csv1(inputfile):                         #csv1 function to read data from the input files
-    dict = {}
-    with open(inputfile, 'r') as file:
-        content = [line[:-1] for line in file]
-    header = (content[:1][0]).split(',')
-    rows = content[1:]
-    for index in range(len(header)):
-        rowArray = []
-        for row in rows:
-            rowArray.append(row[index])
-        dict[header[index]] = rowArray
-
+def coerce(str):
+    if isfloat(str):
+        return float(str)
+    elif str == "true":
+        return True
+    elif str == "false":
+        return False
+    else:
+        return str
+   
+def csv(inputfile):
+    sep = the['seperator']
+    with open(inputfile, "r") as f:
+        for line in f.readlines():
+            list = []
+            for value in line.split(sep):
+                list.append(coerce(value.strip()))
+            
+       
 if __name__ == '__main__':
         print ('Program start\n-----------------------------------------------')#signal of program starting
         try:                                                                    
