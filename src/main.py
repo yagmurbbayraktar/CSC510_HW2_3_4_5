@@ -38,6 +38,14 @@ def cli(dump,inputfile, nums,seed,seperator):   #General sample of cli function 
         the["seed"]=seed
         the["seperator"]=seperator
         return the
+    
+def copy(t,u):   #Copy function 
+        if not isinstance(t, dict):          
+            return t
+        u = {}
+        for k in len(t):
+            u[k] = t[k]
+        return u
 
 """class the():
     def __init__(self, dump,inputfile, nums,seed,seperator):
@@ -79,18 +87,25 @@ def runs(k,old,status,out,msg):                 #'run' function is used to run a
     print("!!!!!!", msg, k , status)
     return out
 
-def csv1(inputfile):                         #csv1 function to read data from the input files
-    dict = {}
-    with open(inputfile, 'r') as file:
-        content = [line[:-1] for line in file]
-    header = (content[:1][0]).split(',')
-    rows = content[1:]
-    for index in range(len(header)):
-        rowArray = []
-        for row in rows:
-            rowArray.append(row[index])
-        dict[header[index]] = rowArray
-
+def coerce(str):
+    if not isinstance(str, float):
+        return float(str)
+    elif str == "true":
+        return True
+    elif str == "false":
+        return False
+    else:
+        return str
+   
+def csv(inputfile):
+    sep = the['seperator']
+    with open(inputfile, "r") as f:
+        for line in f.readlines():
+            list = []
+            for value in line.split(sep):
+                list.append(coerce(value.strip()))
+            
+       
 if __name__ == '__main__':
         print ('Program start\n-----------------------------------------------')#signal of program starting
         try:                                                                    
@@ -133,4 +148,3 @@ if __name__ == '__main__':
             elif opt in ("-S", "--seperator"):
                 seperator = arg
         the = cli(dump,inputfile,nums,seed,seperator)
-        csv1(inputfile)

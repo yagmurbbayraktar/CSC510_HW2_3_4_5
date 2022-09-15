@@ -10,9 +10,9 @@ sys.path.append( '.' )
 from src.main import the, oo
 import unittest
 
-class TestingSym(unittest.TestCase):
+class TestingThe(unittest.TestCase):
     def test_the(self):
-         oo(the)
+         assert print(the) == oo(the)
 
 if __name__ == "__main__":
     unittest.main(argv=['first-arg-is-ignored'], exit=False)

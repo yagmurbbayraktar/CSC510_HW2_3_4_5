@@ -17,7 +17,7 @@ class TestingSym(unittest.TestCase):
         for item in ["a", "a", "a", "a", "b", "b", "c"]:
             sym.add(item)
         mode, entropy = sym.mid(), sym.div()
-        entropy = (1000*entropy)//(1/1000)
+        entropy = (1000*entropy)//1/1000
         print('mid:', mode, 'div:', entropy)
         assert mode=="a" and 1.37<=entropy and entropy<=1.38
 

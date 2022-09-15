@@ -8,19 +8,18 @@ from xmlrpc.client import MAXINT
 import sys
 sys.path.append( '.' )
 from src.main import the, oo
-from src.num import Num
+from src.row import Row
+from src.data import csv
 import unittest
 
 class TestingCSV(unittest.TestCase):
     def test_csv(self):
         n = 0
-        assert csv("../data/auto93.csv", row())
-        for i in range(100):
-            num.add(i)
-        mid, div = num.mid(), num.div()
-        print("div", div)
-        print("mid", mid)
-        assert 50 <= mid and mid <= 52 and 30.5 < div and div< 32
+        while n < 10:
+            csv("../data/auto93.csv", Row)
+            n += 1
+            assert oo(Row) == print(Row)
+        assert True
 
 if __name__ == "__main__":
     unittest.main(argv=['first-arg-is-ignored'], exit=False)

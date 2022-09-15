@@ -1,25 +1,16 @@
-import math
-import random, getopt
-import os, sys, time, random
-import argparse
-import csv
-import math
-from xmlrpc.client import MAXINT
+
+s = __file__
+s = s[0:len(s)-19]
+s = s+"/src"
 import sys
-sys.path.append( '.' )
-from src.main import the
-from src.num import Num
-import unittest
+sys.path.insert(1, s)
+from num import Num
+from main import the
 
-class TestingBignum(unittest.TestCase):
-    def test_num(self):
+def test_bignum():
         num = Num()
-        for i in range(100):
+        the["nums"] = 32
+        for i in range(1000):
             num.add(i)
-        mid, div = num.mid(), num.div()
-        print("div", div)
-        print("mid", mid)
-        assert 50 <= mid and mid <= 52 and 30.5 < div and div< 32
+        return 0 if(32 == len(num.has)) else 1
 
-if __name__ == "__main__":
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
