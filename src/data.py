@@ -26,9 +26,29 @@ def csv(fname, fun):
             t.append(s1) #coerce function will come here i dont have it yet. CHANGE
         fun(t)
 
+def coerce(s):
+    def fun(s1):
+        if s1:
+            return True
+        else:
+            return False
+    a = 0
+    if type(s) == int:
+        return int(s)
+    elif type(s) == float:
+        return float(s)
+    else:
+        x = re.search(r"^\s*(.*)\s*$", s)
+        return fun(x.group())
 
 
 
+# function coerce(s,    fun)
+#   function fun(s1)
+#     if s1=="true"  then return true end 
+#     if s1=="false" then return false end
+#     return s1 end 
+#   return math.tointeger(s) or tonumber(s) or fun(s:match"^%s*(.-)%s*$") end
 
 
 
