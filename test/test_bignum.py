@@ -1,9 +1,7 @@
-
-s = __file__
-s = s[0:len(s)-19]
-s = s+"/src"
 import sys
-sys.path.insert(1, s)
+from testimport import time
+import sys
+sys.path.insert(0, '/home/runner/work/CSC510_HW2_3_4_5/CSC510_HW2_3_4_5/src')
 from num import Num
 from main import the
 
