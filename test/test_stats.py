@@ -5,19 +5,15 @@ import argparse
 import csv
 import math
 from xmlrpc.client import MAXINT
-s = __file__
-s = s[0:len(s)-17]
-s = s+"/src"
 import sys
-sys.path.insert(1, s)
-from num import Num
-from data import data
-from main import the,o
+from src.num import Num
+from src.data import data
+from src.main import the,o
 import unittest
 
 class Testingstats(unittest.TestCase):
     def test_stats(self):
-        data1 = data("../data/auto93.csv")
+        data1 = data("/home/runner/work/CSC510_HW2_3_4_5/CSC510_HW2_3_4_5/data/auto93.csv")
         def div(col):
             return col.div()
         def mid(col):
