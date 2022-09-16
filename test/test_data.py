@@ -5,7 +5,7 @@ s = s+"/src"
 import sys
 sys.path.insert(1, s)
 from main import the,oo
-from data import Data
+from data import data
 import math
 import random, getopt
 import os, sys, time, random
@@ -14,7 +14,7 @@ import csv
 import math
 
 def test_data():
-    d = Data("../data/data1.csv")
-    for _, col in enumerate(d.cols.y):
+    data1 = data("../data/data1.csv")
+    for _, col in enumerate(data1.cols.y):
         oo(col)
-    return 0 if len(d.cols.y) == 3 else 1
+    return 0 if len(data1.cols.y) == 3 else 1
