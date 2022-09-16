@@ -16,7 +16,7 @@ class TestingCSV(unittest.TestCase):
     def test_csv(self):
         n = 0
         while n < 10:
-            csv("../data/auto93.csv", Row)
+            csv("/home/runner/work/CSC510_HW2_3_4_5/CSC510_HW2_3_4_5/data/auto93.csv", Row)
             n += 1
             assert oo(Row) == print(Row)
         assert True
