@@ -39,7 +39,7 @@ def cli(dump,inputfile, nums,seed,seperator):   #General sample of cli function 
         the["seperator"]=seperator
         return the
     
-def copy(t,u):   #Copy function 
+def copy(t):   #Copy function 
         if not isinstance(t, dict):          
             return t
         u = {}
@@ -89,7 +89,11 @@ def runs(k,old,status,out,msg):                 #'run' function is used to run a
 
 def coerce(str):
     if not isinstance(str, float):
-        return float(str)
+        try:
+            float(str)
+            return float(str)
+        except:
+            return str
     elif str == "true":
         return True
     elif str == "false":
@@ -97,13 +101,18 @@ def coerce(str):
     else:
         return str
    
-def csv(inputfile):
-    sep = the['seperator']
+def csv(inputfile, result):
+    sep = the["seperator"]
     with open(inputfile, "r") as f:
         for line in f.readlines():
             list = []
             for value in line.split(sep):
                 list.append(coerce(value.strip()))
+            result(list)
+
+def push(input, row):
+    input[1+len(input)]= row
+    return row
             
        
 if __name__ == '__main__':
