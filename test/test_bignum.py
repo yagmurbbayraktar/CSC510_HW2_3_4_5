@@ -1,5 +1,4 @@
 import sys
-from testimport import time
 import sys
 sys.path.insert(0, '/home/runner/work/CSC510_HW2_3_4_5/CSC510_HW2_3_4_5/src')
 from num import Num
