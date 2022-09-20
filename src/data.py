@@ -18,8 +18,7 @@ class data:
         if not self.cols:
             self.cols = Cols(xs)
         else:
-            row = Row(xs)
-            print(row.cells)
+            row = push(self.rows,Row(xs))
             self.rows.append(Row(xs))
             for _, todo in enumerate([self.cols.x, self.cols.y]):
                 for _, col in enumerate(todo):
