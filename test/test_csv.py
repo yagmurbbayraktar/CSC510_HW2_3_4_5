@@ -15,9 +15,10 @@ def test_csv():
         def row(input):
                 global n
                 n+=1
+                print(n)
                 if n >10:
                         return
                 else:
                         print(input)
-        data = csv("/home/runner/work/CSC510_HW2_3_4_5/CSC510_HW2_3_4_5/data/auto93.csv", 1)
+        data = csv("/home/runner/work/CSC510_HW2_3_4_5/CSC510_HW2_3_4_5/data/auto93.csv", row)
         return 0
