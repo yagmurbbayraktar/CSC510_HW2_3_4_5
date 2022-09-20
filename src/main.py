@@ -111,7 +111,7 @@ def csv(inputfile, result):
             result(list)
 
 def push(input, row):
-    input[1+len(input)]= row
+        input.append(row)
     return row
             
        
