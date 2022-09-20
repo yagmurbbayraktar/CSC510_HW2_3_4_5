@@ -12,10 +12,11 @@ def per(t,p):
         return t[max(1, min(len(t),p))]
 
 class Num():
-    def __init__(self, val = ""):
+    def __init__(self, at = 0, name1 = ""):
         self.count = 0 # counter
+        self.name = name1
         self.has = {}  #stored data
-        self.val = val  # value at key position
+        self.at = at  # value at key position
         self.isSorted = False #boolean
         self.lo = MAXINT
         self.hi = -MAXINT
