@@ -26,14 +26,10 @@ class data:
     def stats(self, places, showcols, fun):
         places = places or 2
         showcols = showcols or self.cols.y 
-        fun = fun or "mid"
         t = {}       
         for _, col in enumerate(showcols):
             v = 0
-            if fun == "mid":
-                v = col.mid()
-            else:
-                v = col.div()
+            v = fun(col)
             v = round(v, places)
             t[col.name] = v
         return t
