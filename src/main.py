@@ -30,8 +30,8 @@ def oo(t):
     print(o(t))
     return t
 """
-def cli(dump,inputfile, nums,seed,seperator):   #General sample of cli function talked about in class
-        the = {}                                #The function takes several parameters and does updates on 'the' class/dictionary
+def cli(dump,inputfile, nums,seed,seperator):   #General sample of cli function talked about in class                                
+        global the                                        #The function takes several parameters and does updates on 'the' class/dictionary
         the["dump"]=dump                        #returns 'the' dictionary
         the["inputfile"]=inputfile
         the["nums"]=nums
