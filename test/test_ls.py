@@ -9,4 +9,3 @@ def test_LS():
     for Key, value in my_list.items():
         print(value)
     return True
-test_LS()
