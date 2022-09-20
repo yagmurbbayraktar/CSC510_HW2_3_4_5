@@ -104,9 +104,9 @@ def coerce(str):
 def csv(inputfile, result):
     sep = the["seperator"]
     with open(inputfile, "r") as f:
-        for line in f.readlines():
+        for eachline in f.readlines():
             list = []
-            for value in line.split(sep):
+            for value in eachline.split(sep):
                 push(list,coerce(value.strip()))
             result(list)
 
