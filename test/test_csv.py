@@ -10,9 +10,8 @@ sys.path.append( '.' )
 from src.main import the, oo, csv
 from src.row import Row
 import unittest
-
+n = 0
 def test_csv():
-        n = 0
         def row(input):
                 global n
                 n+=1
