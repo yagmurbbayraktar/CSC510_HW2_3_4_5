@@ -12,7 +12,7 @@ from src.data import data
 from src.main import the,o
 import unittest
 
-def test_stats(self):
+def test_stats():
         data1 = data("/home/runner/work/CSC510_HW2_3_4_5/CSC510_HW2_3_4_5/data/auto93.csv")
         def div(col):
             return col.div()
