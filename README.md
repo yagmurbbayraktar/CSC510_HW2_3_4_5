@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/531751134.svg)](https://zenodo.org/badge/latestdoi/531751134)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+[![Build Status](https://app.travis-ci.com/wangz35/CSC-510-HW1.svg?branch=main)](https://app.travis-ci.com/wangz35/CSC-510-HW1)
 
 
 # CSC510_HW2_3_4_5
