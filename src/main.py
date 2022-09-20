@@ -101,7 +101,7 @@ def coerce(str):
     else:
         return str
    
-def csv(inputfile, result, n):
+def csv(inputfile, result):
     sep = the["seperator"]
     with open(inputfile, "r") as f:
         for line in f.readlines():
