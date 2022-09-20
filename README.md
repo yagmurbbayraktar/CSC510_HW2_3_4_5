@@ -9,3 +9,7 @@
 
 # CSC510_HW2_3_4_5
 Repository of CSC510 Homework 2, 3, 4, 5 of Group 39
+
+## Description
+This repository contains the codework of Homeworks 2 - 5. The aim of this project is to provide a A Python application to read CSV files and generate summaries of columns and return summarizing information about the file, such as medians and standard deviation. The code works for both symbolic and numeric values that can be found in the CSV files. There are several test cases that can be find under tests folder to test the robustness of the code. 
+
