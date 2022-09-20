@@ -14,13 +14,9 @@ import unittest
 
 def test_stats():
         data1 = data("/home/runner/work/CSC510_HW2_3_4_5/CSC510_HW2_3_4_5/data/auto93.csv")
-        def div(col):
-            return col.div()
-        def mid(col):
-            return col.mid()
-        print("xmid", o(data1.stats(2, data1.cols.x, mid)))
-        print("xdiv", o(data1.stats(3, data1.cols.x, div)))
-        print("ymid", o(data1.stats(2, data1.cols.y, mid)))
-        print("ydiv", o(data1.stats(3, data1.cols.y, div)))
+        print('xmid= ', data1.stats(2, data1.cols.x, "mid"))
+        print('xdiv= ', data1.stats(3, data1.cols.x, "div"))
+        print('ymid= ', data1.stats(2, data1.cols.y, "mid"))
+        print('ymid= ', data1.stats(3, data1.cols.y, "div"))
         return 0
 
