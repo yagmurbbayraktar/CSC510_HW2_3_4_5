@@ -9,7 +9,7 @@ from test_the import test_the
 from test_stats import test_stats
 from test_csv import test_csv
 
-def main():test_stats()+
+def main():
     output = test_bad()+test_bignum()+test_csv()+test_data()+test_LS()+test_num()+test_sym()+test_the()+test_stats()+test_csv()
     print(output, " tests failed")
     print(7 - output, " tests passed")
