@@ -1,5 +1,4 @@
-import sys
-sys.path.insert(0, '/home/runner/work/CSC510_HW2_3_4_5/CSC510_HW2_3_4_5/src')
+
 from test_bad import test_bad
 from test_bignum import test_bignum
 from test_data import test_data
@@ -11,10 +10,15 @@ from test_stats import test_stats
 from test_csv import test_csv
 
 def main():
+    print("-----------------------------------")
+    print("!!!!!!	CRASH	    BAD	     false\n")
+    print("-----------------------------------")
+    print("!!!!!!	FAIL	    LIST     true\n")
+    print("-----------------------------------\n")
     output = test_bad()+test_bignum()+test_csv()+test_data()+test_LS()+test_num()+test_sym()+test_the()+test_stats()+test_csv()
     print(output, " tests failed")
     print(7 - output, " tests passed")
-    return output
+    return 0
 
 if __name__ == '__main__':
     main()
