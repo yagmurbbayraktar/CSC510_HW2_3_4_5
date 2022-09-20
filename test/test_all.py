@@ -1,6 +1,5 @@
 from test_bad import test_bad
 from test_bignum import test_bignum
-from test_csv import test_csv
 from test_data import test_data
 from test_LS import test_LS
 from test_num import test_num
