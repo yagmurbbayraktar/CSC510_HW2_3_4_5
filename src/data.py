@@ -1,35 +1,42 @@
 from csv import reader
 from cols import Cols
-from main import the, push, csv
+from main import the, csv
 from row import Row
 import re
 
 class data:
     def __init__(self, src):
         self.cols = None #summaries of data
-        self.rows = {} #kept data
+        self.rows = [] #kept data
         if isinstance(src, str):
             csv(src, self.add)
         else:
-            for _, row in enumerate(src or {}):
+            for _, row in enumerate(src or []):
                 self.add(row)
                 
     def add(self, xs):
         if not self.cols:
             self.cols = Cols(xs)
         else:
-            row = push(self.rows, Row(xs))
+            row = Row(xs)
+            print(row.cells)
+            self.rows.append(Row(xs))
             for _, todo in enumerate([self.cols.x, self.cols.y]):
                 for _, col in enumerate(todo):
                     col.add(row.cells[col.at])
+
                     
     def stats(self, places, showcols, fun):
         places = places or 2
         showcols = showcols or self.cols.y 
+        fun = fun or "mid"
         t = {}       
         for _, col in enumerate(showcols):
             v = 0
-            v = fun(col)
+            if fun == "mid":
+                v = col.mid()
+            else:
+                v = col.div()
             v = round(v, places)
             t[col.name] = v
         return t
