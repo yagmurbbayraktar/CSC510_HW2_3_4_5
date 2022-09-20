@@ -1,6 +1,6 @@
 from csv import reader
 from cols import Cols
-from main import the, csv
+from main import the, csv, push
 from row import Row
 import re
 
