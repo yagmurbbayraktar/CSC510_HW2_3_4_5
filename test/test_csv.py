@@ -12,7 +12,7 @@ from src.row import Row
 import unittest
 n = 0
 def test_csv():
-        def row(n, input):
+        def row(input):
                 n+=1
                 global n
                 if n >10:
