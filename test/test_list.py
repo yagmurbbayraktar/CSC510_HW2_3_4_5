@@ -11,8 +11,7 @@ from src.main import the, oo, csv
 from src.row import Row
 import unittest
 
-class TestingCSV(unittest.TestCase):
-    def test_list(self):
+def test_list():
         t = {}
         test_names = {
         'ALL':1,
@@ -33,5 +32,4 @@ class TestingCSV(unittest.TestCase):
         t = dict(t)
         return t
 
-if __name__ == "__main__":
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+
