@@ -8,7 +8,7 @@ from xmlrpc.client import MAXINT
 import unittest
 
 eg, fails = {}, 0
-inputfile = 'data.csv'
+inputfile = 'auto93.csv'
 nums = 512
 seed = 10019
 seperator = ",]]"
