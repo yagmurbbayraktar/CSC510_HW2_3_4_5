@@ -5,7 +5,7 @@ from num import Num
 from main import the,cli
 
 def test_bignum():
-        cli(False,'auto93.csv', 512,10019,",]]")
+        cli(False,'auto93.csv', 512,10019,",")
         num = Num()
         the["nums"] = 32
         for i in range(1000):
