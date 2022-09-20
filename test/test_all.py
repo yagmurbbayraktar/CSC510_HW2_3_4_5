@@ -3,7 +3,7 @@ sys.path.insert(0, '/home/runner/work/CSC510_HW2_3_4_5/CSC510_HW2_3_4_5/src')
 from test_bad import test_bad
 from test_bignum import test_bignum
 from test_data import test_data
-from test_LS import test_LS
+from test_ls import test_LS
 from test_num import test_num
 from test_sym import test_sym
 from test_the import test_the
