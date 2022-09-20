@@ -10,21 +10,12 @@ class Cols:
         self.y = []
         self.klass = None
     
-    def cols(self):
-        for c in range(len(self.names)):
-            if (re.search('^[A-Z]', self.names[c])):
-                col = Num(c, self.names[c])
-                self.all.append(Num(c, self.names[c]))
-            else:
-                col = Sym(c, self.names[c])
-                self.all.append(Sym(c, self.names[c]))
-            
-            if not re.search(':$', self.names[c]):
-                if re.search('[!+-]'):
-                    self.y.append(Num(c, self.names[c]))
-                else:
-                    self.x.append(Sym(c, self.names[c]))
-                
-                if re.search('!$', self.names[c]):
-                    self.klass = col
+        for idx, name in enumerate(names): 
+                    col = name[0].isupper() and Num(idx, name) or Sym(idx, name)  
+                    self.all.append(col)
+                    if name[-1] != ':':
+                        self.y.append(col) if name[-1] == '-' or name[-1] == '+' else self.x.append(col)
+                        if name[-1] == '!':
+                            self.klass = col
+
 
