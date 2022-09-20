@@ -10,5 +10,5 @@ sys.path.insert(0, '/home/runner/work/CSC510_HW2_3_4_5/CSC510_HW2_3_4_5')
 from src.main import the, oo
 import unittest
 
-def test_the(self):
+def test_the():
          return 0 if( print(the) == oo(the)) else 1
