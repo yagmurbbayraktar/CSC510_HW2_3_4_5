@@ -108,7 +108,7 @@ def csv(inputfile, result, n):
             list = []
             for value in line.split(sep):
                 list.append(coerce(value.strip()))
-            result(n,list)
+            result(list)
 
 def push(input, row):
     input[1+len(input)]= row
