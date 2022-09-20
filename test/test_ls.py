@@ -1,8 +1,8 @@
-from test_list import LIST
+from test_list import test_list
 
 def test_LS():
-    my_list = LIST()
-    print (LIST())
+    my_list = test_list()
+    print (test_list())
     print ("Examples lua csv -e ...")
     for Key, value in my_list.items():
         print(value)
