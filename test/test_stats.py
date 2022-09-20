@@ -12,8 +12,7 @@ from src.data import data
 from src.main import the,o
 import unittest
 
-class Testingstats(unittest.TestCase):
-    def test_stats(self):
+def test_stats(self):
         data1 = data("/home/runner/work/CSC510_HW2_3_4_5/CSC510_HW2_3_4_5/data/auto93.csv")
         def div(col):
             return col.div()
@@ -23,8 +22,5 @@ class Testingstats(unittest.TestCase):
         print("xdiv", o(data1.stats(3, data1.cols.x, div)))
         print("ymid", o(data1.stats(2, data1.cols.y, mid)))
         print("ydiv", o(data1.stats(3, data1.cols.y, div)))
-        assert True
+        return 0
 
-
-if __name__ == "__main__":
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
