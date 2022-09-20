@@ -12,9 +12,9 @@ from src.row import Row
 import unittest
 n = 0
 def test_csv():
-        global n = 0
         def row(n, input):
                 n+=1
+                global n
                 if n >10:
                         return
                 else:
