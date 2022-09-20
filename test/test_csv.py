@@ -15,7 +15,6 @@ def test_csv():
         def row(input):
                 global n
                 n+=1
-                print(n)
                 if n >10:
                         return
                 else:
