@@ -7,6 +7,7 @@ def test_num():
         num = Num()
         for i in range(100):
             num.add(i)
+        print(num.num().values())
         mid, div = num.mid(), num.div()
         print("div", div)
         print("mid", mid)
