@@ -19,7 +19,6 @@ class data:
             self.cols = Cols(xs)
         else:
             row = push(self.rows,Row(xs))
-            self.rows.append(Row(xs))
             for _, todo in enumerate([self.cols.x, self.cols.y]):
                 for _, col in enumerate(todo):
                     col.add(row.cells[col.at])
