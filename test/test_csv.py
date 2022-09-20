@@ -13,8 +13,8 @@ import unittest
 n = 0
 def test_csv():
         def row(input):
-                n+=1
                 global n
+                n+=1
                 if n >10:
                         return
                 else:
