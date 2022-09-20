@@ -16,7 +16,7 @@ class Num():
         self.count = 0 # counter
         self.has = {}  #stored data
         self.val = val  # value at key position
-        self.isSorted = True #boolean
+        self.isSorted = False #boolean
         self.lo = MAXINT
         self.hi = -MAXINT
 
