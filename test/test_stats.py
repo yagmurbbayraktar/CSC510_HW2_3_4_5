@@ -6,6 +6,7 @@ import csv
 import math
 from xmlrpc.client import MAXINT
 import sys
+sys.path.insert(0, '/home/runner/work/CSC510_HW2_3_4_5/CSC510_HW2_3_4_5')
 from src.num import Num
 from src.data import data
 from src.main import the,o
