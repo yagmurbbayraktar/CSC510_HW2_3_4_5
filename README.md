@@ -5,6 +5,8 @@
 [![Contributors](https://img.shields.io/github/contributors/yagmurbbayraktar/CSC510_HW2_3_4_5)](https://yagmurbbayraktar/CSC510_HW2_3_4_5/graphs/contributors)
 ![Supports Python](https://img.shields.io/pypi/pyversions/pytest)
 [![GitHub Release](https://img.shields.io/github/release/yagmurbbayraktar/CSC510_HW2_3_4_5.svg)](https://github.com/yagmurbbayraktar/CSC510_HW2_3_4_5/releases)
+[![GitHub issues](https://img.shields.io/github/issues/yagmurbbayraktar/CSC510_HW2_3_4_5)](https://github.com/yagmurbbayraktar/CSC510_HW2_3_4_5/issues)
+[![GitHub issues](https://img.shields.io/github/issues/yagmurbbayraktar/CSC510_HW2_3_4_5)](https://github.com/yagmurbbayraktar/CSC510_HW2_3_4_5/issues)
 
 # CSC510_HW2_3_4_5
 Repository of CSC510 Homework 2, 3, 4, 5 of Group 39
