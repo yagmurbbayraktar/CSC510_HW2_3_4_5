@@ -9,6 +9,6 @@ def test_bignum():
         the["nums"] = 32
         for i in range(1000):
             num.add(i)
-        print(num.num())
+        print(num.num().values())
         return 0 if(32 == len(num.has)) else 1
 
