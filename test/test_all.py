@@ -43,9 +43,10 @@ def main():
     output = +test_stats()
     print("!!!!!!	PASS	     stats	 true\n")
     print("-----------------------------------")
-    output =+test_sym()+test_the()
+    output =+test_sym()
     print("!!!!!!	PASS	     sym	 true\n")
     print("-----------------------------------")
+    output = +test_the()
     print(output, " tests failed")
     print(7 - output, " tests passed")
     return 0
