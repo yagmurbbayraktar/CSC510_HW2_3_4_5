@@ -1,5 +1,6 @@
 import re
 from src.num import Num
+from src.main import push
 from src.sym import Sym
 
 class Cols:
