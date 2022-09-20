@@ -101,14 +101,15 @@ def coerce(str):
     else:
         return str
    
-def csv(inputfile, result):
+def csv(inputfile, result, n):
     sep = the["seperator"]
     with open(inputfile, "r") as f:
         for line in f.readlines():
             list = []
             for value in line.split(sep):
                 list.append(coerce(value.strip()))
-            result(list)
+            n = n+1
+            result(n,list)
 
 def push(input, row):
     input[1+len(input)]= row
