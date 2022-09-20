@@ -1,9 +1,10 @@
 import sys
 sys.path.insert(0, '../src')
 from num import Num
-from main import the
+from main import the,cli
 
 def test_num():
+        cli(False,'auto93.csv', 512,10019,",]]")
         num = Num()
         for i in range(100):
             num.add(i)
