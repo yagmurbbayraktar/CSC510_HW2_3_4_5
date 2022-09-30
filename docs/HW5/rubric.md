@@ -2,11 +2,10 @@
 |-----|---------|---------|
 |Video1|NA||| 
 |Video2|NA||| 
-|Workload is spread over the whole team (one team member is often Xtimes more productive than the others... 
-but nevertheless, here is a track record that everyone is contributing a lot)|evidence in GH|
-|Number of commits|in GH|
-|Number of commits: by different people|in GH|
-|Issues reports: there are **many**|
+|Workload is spread over the whole team|3||Github|
+|Number of commits|3||Github|
+|Number of commits: by different people|3||Github|
+|Issues reports: there are **many**||0||Github|
 |Issues are being closed|evidence in GH|
 |DOI badge: exists|in GH|
 |Docs: doco generated, format not ugly |in GH|
