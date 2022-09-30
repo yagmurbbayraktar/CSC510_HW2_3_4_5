@@ -1,7 +1,7 @@
-|Notes|evidence|
-|-----|---------|
-|Video1| For people starting with 2020 or 2021 projects, 2min video of old functionality| 
-|Video2|For people starting with 2020 or 2021 projects, 2min video of new functionality, showing a significant delta from old. For everyone else, 2min video of all functionality.| 
+|Notes|Score|Evidence|
+|-----|---------|---------|
+|Video1|NA||| 
+|Video2|NA||| 
 |Workload is spread over the whole team (one team member is often Xtimes more productive than the others... 
 but nevertheless, here is a track record that everyone is contributing a lot)|evidence in GH|
 |Number of commits|in GH|
@@ -38,7 +38,7 @@ Group number: 11
 Github Link: https://github.com/Surya-06/SE-Proj22-Team11
 
 | Notes                                                                                                                                                   | Score  | Evidence                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------- |
+| -------- | ------- | ------- |
 |Video1|NA||
 |Video2|NA||
 | Workload is spread over the whole team (one team member is often Xtimes more productive than the others… |3| Github|
