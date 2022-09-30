@@ -34,7 +34,8 @@ but nevertheless, here is a track record that everyone is contributing a lot)|ev
 
 
 # Rubric Assessment
-Evaluation for: https://github.com/Drew-Cummings/kulaUpdated
+Group number: 11
+Github Link: https://github.com/Surya-06/SE-Proj22-Team11
 
 | Notes                                                                                                                                                   | **Score (Total = 30)** | Evidence                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------- |
