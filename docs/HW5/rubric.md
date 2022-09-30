@@ -8,13 +8,13 @@ Github Link: https://github.com/Surya-06/SE-Proj22-Team11
 |Video2|NA|| 
 |Workload is spread over the whole team|3|Github|
 |Number of commits|3|Github|
-|Number of commits: by different people|3||Github|
+|Number of commits: by different people|3|Github|
 |Issues reports: there are **many**|0|Github|
 |Issues are being closed|0|Github|
 |DOI badge: exists|3|Github|
 |Docs: doco generated, format not ugly |0|Github|
 |Docs: what: point descriptions of each class/function (in isolation) |0|Github
-|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|doc page entries|0|Github|
+|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|0|Github|
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|0|Github
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|0|Github
 |Use of version control tools|3|Github|
