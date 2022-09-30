@@ -39,9 +39,9 @@ Github Link: https://github.com/Surya-06/SE-Proj22-Team11
 
 | Notes                                                                                                                                                   | Score  | Evidence                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------- |
-|Video1|0||
-|Video2|0||
-| Workload is spread over the whole team (one team member is often Xtimes more productive than the others…                                                | 3       | evidence in GH                                                                                                               |
+|Video1|NA||
+|Video2|NA||
+| Workload is spread over the whole team (one team member is often Xtimes more productive than the others… |3| Github|
 | but nevertheless, here is a track record that everyone is contributing a lot)                                                                           | 3       | evidence in GH                                                                                                 |
 | Number of commits                                                                                                                                       | 3       | in GH                                                                                                          |
 | Number of commits: by different people                                                                                                                  | 3       | in GH                                                                                                          |
