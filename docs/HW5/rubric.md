@@ -1,9 +1,9 @@
 |Notes|Score|Evidence|
 |-----|---------|---------|
-|Video1|NA||| 
-|Video2|NA||| 
-|Workload is spread over the whole team||3||Github|
-|Number of commits|3||Github|
+|Video1|NA||
+|Video2|NA|| 
+|Workload is spread over the whole team|3|Github|
+|Number of commits|3|Github|
 |Number of commits: by different people|3||Github|
 |Issues reports: there are **many**|0||Github|
 |Issues are being closed|evidence in GH|
