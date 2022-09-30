@@ -19,14 +19,14 @@ Github Link: https://github.com/Surya-06/SE-Proj22-Team11
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|0|Github|
 |Use of version control tools|3|Github|
 |Use of style checkers|0|Github|
-|Use of code formatters. |0||Github|
-|Use of syntax checkers. |0||Github|
+|Use of code formatters. |0|Github|
+|Use of syntax checkers. |0|Github|
 |Use of code coverage|3|Github|
 |Other automated analysis tools|3|Github|
 |Test cases exist|3|Github|
 |Test cases are routinely executed|3|Github|
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|2|Github|
-|Issues are discussed before they are closed|0||Github|
+|Issues are discussed before they are closed|0|Github|
 |Chat channel: exists|1|No way of knowing|
 |Test cases: a large proportion of the issues related to handling failing cases.|0|Github|
 |Evidence that the whole team is using the same tools: everyone can get to all tools and files|3|Github|
