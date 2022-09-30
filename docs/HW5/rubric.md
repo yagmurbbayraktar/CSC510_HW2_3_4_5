@@ -15,7 +15,7 @@ Github Link: https://github.com/Surya-06/SE-Proj22-Team11
 |Docs: doco generated, format not ugly |0|Github|
 |Docs: what: point descriptions of each class/function (in isolation) |0|Github|
 |Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|0|Github|
-|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|0|Github
+|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|0|Github|
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|0|Github|
 |Use of version control tools|3|Github|
 |Use of style checkers|0|Github|
@@ -26,7 +26,7 @@ Github Link: https://github.com/Surya-06/SE-Proj22-Team11
 |Test cases exist|3|Github|
 |Test cases are routinely executed|3|Github|
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|2|Github|
-|Issues are discussed before they are closed|0|||
+|Issues are discussed before they are closed|0||Github|
 |Chat channel: exists|1|No way of knowing|
 |Test cases: a large proportion of the issues related to handling failing cases.|0|Github|
 |Evidence that the whole team is using the same tools: everyone can get to all tools and files|3|Github|
