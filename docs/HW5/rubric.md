@@ -28,10 +28,10 @@ Github Link: https://github.com/Surya-06/SE-Proj22-Team11
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|2|Github|
 |Issues are discussed before they are closed|0|||
 |Chat channel: exists|1|No way of knowing|
-|Test cases: a large proportion of the issues related to handling failing cases.|0|
+|Test cases: a large proportion of the issues related to handling failing cases.|0||
 |Evidence that the whole team is using the same tools: everyone can get to all tools and files|3||
 |Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|3||
 |Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|3||
-|Evidence that the members of the team are working across multiple places in the code base|0|No way of knowing|
-|Short release cycles | (hard to see in short projects) project members are committing often enough so that everyone can get your work|1|Github|
+|Evidence that the members of the team are working across multiple places in the code base|3|Github|
+|Short release cycles |2|Github|
 
