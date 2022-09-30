@@ -37,7 +37,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|ev
 Group number: 33
 Github Link: [https://github.com/sreedhara-aneesh/csc510-fall22-hw-g33](https://github.com/sreedhara-aneesh/csc510-fall22-hw-g33)
 
-| Notes                                                                                                                                                   | **Score (Total = 30)** | Evidence                                                                                                       |
+| Notes                                                                                                                                                   | **Score (Total = 46)** | Evidence                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------- |
 |Video1|0||
 |Video2|0||
