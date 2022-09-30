@@ -21,9 +21,9 @@ Github Link: https://github.com/Surya-06/SE-Proj22-Team11
 |Use of style checkers|0|Github|
 |Use of code formatters. |0|||
 |Use of syntax checkers. |0|||
-|Use of code coverage |config files in GH|3|Github|
+|Use of code coverage|3|Github|
 |Other automated analysis tools|3|Github|
-|Test cases exist|dozens of tests and those test cases are more than 30% of the code base|3|Github|
+|Test cases exist|3|Github|
 |Test cases are routinely executed|3|Github|
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|2|Github|
 |Issues are discussed before they are closed|0|||
