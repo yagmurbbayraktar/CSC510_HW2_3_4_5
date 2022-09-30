@@ -37,7 +37,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|ev
 Group number: 11
 Github Link: https://github.com/Surya-06/SE-Proj22-Team11
 
-| Notes                                                                                                                                                   | **Score  | Evidence                                                                                                       |
+| Notes                                                                                                                                                   | Score  | Evidence                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------- |
 |Video1|0||
 |Video2|0||
