@@ -18,9 +18,9 @@ Github Link: https://github.com/Surya-06/SE-Proj22-Team11
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|0|Github
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|0|Github
 |Use of version control tools|3|Github|
-|Use of style checkers |config files in GH showing your config|3|Github|
+|Use of style checkers|0|Github|
 |Use of code formatters. |0|||
-|Use of syntax checkers. |config files iin  GH showing this checker's config |0|||
+|Use of syntax checkers. |0|||
 |Use of code coverage |config files in GH|3|Github|
 |Other automated analysis tools|3|Github|
 |Test cases exist|dozens of tests and those test cases are more than 30% of the code base|3|Github|
