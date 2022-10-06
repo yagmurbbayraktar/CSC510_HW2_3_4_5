@@ -32,7 +32,6 @@ jobs:
       run: |
         cd ${{ github.workspace }}/src ; \
         find . -name "*.html" -type f -delete ; \
-        cd ${{ github.workspace }}/src ; \
         pdoc3 --html . -o ${{ github.workspace }}/src ; \
     - name: Lint with flake8
       run: |
