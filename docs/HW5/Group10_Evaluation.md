@@ -8,8 +8,6 @@ Github Link: https://github.com/boscosylvester-john/se_hw_LuaToPython
 |Video1|NA||
 |Video2|NA|| 
 |Workload is spread over the whole team|3|Github, Insights, Contributors, commit numbers between 6 to 34|
-
-
 |Number of commits|3|Github|
 |Number of commits: by different people|3|Github, Total 106|
 |Issues reports: there are **many**|3|Github, 2 closed|
