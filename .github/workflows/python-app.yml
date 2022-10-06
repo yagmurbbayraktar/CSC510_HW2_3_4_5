@@ -32,7 +32,7 @@ jobs:
       run: |
         cd ${{ github.workspace }}/src ; \
         find . -name "*.html" -type f -delete ; \
-        pdoc3 --html . -o ${{ github.workspace }} ; \
+        pdoc3 --html . -o ${{ github.workspace }} --force; \
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
