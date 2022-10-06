@@ -1,7 +1,7 @@
 import re
-from src.num import Num
-from src.main import push
-from src.sym import Sym
+from num import Num
+from main import push
+from sym import Sym
 
 class Cols:
     def __init__(self, names):
