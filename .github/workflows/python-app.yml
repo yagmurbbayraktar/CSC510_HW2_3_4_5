@@ -33,7 +33,7 @@ jobs:
         cd ${{ github.workspace }}/src ; \
         find . -name "*.html" -type f -delete ; \
         cd ${{ github.workspace }}/src ; \
-        pdoc3 --html . -o ${{ github.workspace }}/docs --force --template-dir ${{ github.workspace }}/src ; \
+        pdoc3 --html . -o ${{ github.workspace }}/src --force --template-dir ${{ github.workspace }}/src ; \
         mv ${{ github.workspace }}/src/* ${{ github.workspace }}/src
     - name: Lint with flake8
       run: |
