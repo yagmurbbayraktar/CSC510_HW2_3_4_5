@@ -30,9 +30,8 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Generate documentation
       run: |
-        cd ${{ github.workspace }}/src ; \
-        find . -name "*.html" -type f -delete ; \
-        pdoc3 --html cols -o ${{ github.workspace }} --force; \
+        cd ${{ github.workspace }}/src ; 
+        pdoc3 --html cols -o ${{ github.workspace }} --force; 
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
