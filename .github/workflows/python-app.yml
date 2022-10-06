@@ -37,8 +37,8 @@ jobs:
     - name: Test with pytest
       run: |
         python test/test_all.py
-    - name: Generate Report
+    - name: Run test with coverage report
       run: |
-        coverage run test/test_csv.py -e ALL
-    - name: Upload Coverage to Codecov
+        coverage run --source=. -m pytest
+    - name: Upload coverage report
       uses: codecov/codecov-action@v2
